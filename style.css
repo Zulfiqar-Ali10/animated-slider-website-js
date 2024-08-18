@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: #222;
+    overflow: hidden;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 40px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+}
+
+.nav .logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.logo span {
+    color: #ff0000;
+    font-size: 1rem;
+}
+
+.nav .menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu a {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #fff;
+    margin-left: 3rem;
+    transition: 0.5s;
+}
+
+.nav .menu a:hover {
+    color: #ff0000;
+}
+
+.Banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.slider .card {
+    width: 170px;
+    height: 250px;
+    display: inline-block;
+    position: absolute;
+    bottom: 50px;
+    box-shadow: 0 5px 10px #505050;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.slider .card:nth-child(1) {
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+}
+
+.slider .card:nth-child(1)::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.slider .card:nth-child(2) {
+    left: 50%;.
+}
+
+.slider .card:nth-child(3) {
+    left: calc(50% + 190px);
+}
+
+.slider .card:nth-child(4) {
+    left: calc(50% + 380px);
+}
+
+.slider .card:nth-child(5) {
+    left: calc(50% + 570px);
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .card-content {
+    position: absolute;
+    width: 450px;
+    top: 50%;
+    left: 100px;
+    transform: translateY(-50%);
+    color: #fff;
+    display: none;
+}
+
+.card:nth-child(1) .card-content {
+    display: block;
+}
+
+.card-content .title {
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 1.2;
+    opacity: 0;
+    animation: anim 0.5s ease-in-out forwards;
+}
+
+.card-content .desc {
+    margin: 30px 0;
+    opacity: 0;
+    animation: anim 0.5s ease-in-out forwards;
+    animation-delay: 0.3s;
+}
+
+.card-content .btn {
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    opacity: 0;
+    animation: anim 0.5s ease-in-out forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes anim {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+        filter: blur(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+        filter: blur(0px);
+    }
+}
+
+.btns {
+    position: absolute;
+    bottom: 50px;
+    left: 8%;
+}
+
+.btns .btn {
+    display: inline-flex;
+    width: 45px;
+    height: 45px;
+    background: #ff0000;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+.btns .btn:hover {
+    background: #fff;
+    color: #000;
+}
+
+.btns .btn:nth-child(2) {
+    margin-left: 20px;
+}

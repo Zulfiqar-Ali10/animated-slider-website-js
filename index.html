@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hero Section with Image Slider - JavaScript</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="nav">
+            <a href="#" class="logo">Zulfiqar<span>.com</span></a>
+    
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ///////////////////////////////////////////////////////////// -->
+
+    <section class="Banner">
+        <div class="slider">
+            <div class="card">
+                <img src="img1.jpg" alt="" />
+                <div class="card-content">
+                    <h2 class="title">Bat Man</h2>
+                    <p class="desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+                        fugit quibusdam fuga sunt cupiditate recusandae maiores non, omnis
+                        delectus corrupti.
+                    </p>
+                    <button class="btn">Read More</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img2.jpg" alt="" />
+                <div class="card-content">
+                    <h2 class="title">Hulk</h2>
+                    <p class="desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+                        fugit quibusdam fuga sunt cupiditate recusandae maiores non, omnis
+                        delectus corrupti.
+                    </p>
+                    <button class="btn">Read More</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img3.jpg" alt="" />
+                <div class="card-content">
+                    <h2 class="title">Spider Man</h2>
+                    <p class="desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+                        fugit quibusdam fuga sunt cupiditate recusandae maiores non, omnis
+                        delectus corrupti.
+                    </p>
+                    <button class="btn">Read More</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img4.jpg" alt="" />
+                <div class="card-content">
+                    <h2 class="title">Captain America</h2>
+                    <p class="desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+                        fugit quibusdam fuga sunt cupiditate recusandae maiores non, omnis
+                        delectus corrupti.
+                    </p>
+                    <button class="btn">Read More</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img5.jpg" alt="" />
+                <div class="card-content">
+                    <h2 class="title">Thor</h2>
+                    <p class="desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+                        fugit quibusdam fuga sunt cupiditate recusandae maiores non, omnis
+                        delectus corrupti.
+                    </p>
+                    <button class="btn">Read More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- /////////////////////////////////////////////////////// -->
+
+    
+    <div class="btns">
+        <a href="#" class="btn" onclick="prevSlide()"><i class="fas fa-chevron-left"></i></a>
+        <a href="#" class="btn" onclick="nextSlide()"><i class="fas fa-chevron-right"></i></a>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
